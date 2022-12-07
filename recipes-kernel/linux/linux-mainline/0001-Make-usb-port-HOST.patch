@@ -1,0 +1,25 @@
+From 4e09f1ad02f5c4e1b87efa369dfc03e3d9ecf250 Mon Sep 17 00:00:00 2001
+From: mlelli <matteo.lelli@datalogic.com>
+Date: Mon, 5 Dec 2022 17:14:34 +0000
+Subject: [PATCH] Make usb port HOST
+
+---
+ arch/arm/boot/dts/sun8i-h2-plus-bananapi-m2-zero.dts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm/boot/dts/sun8i-h2-plus-bananapi-m2-zero.dts b/arch/arm/boot/dts/sun8i-h2-plus-bananapi-m2-zero.dts
+index 8e8634ff2..714d1f2a9 100644
+--- a/arch/arm/boot/dts/sun8i-h2-plus-bananapi-m2-zero.dts
++++ b/arch/arm/boot/dts/sun8i-h2-plus-bananapi-m2-zero.dts
+@@ -256,7 +256,7 @@ &r_pio {
+ };
+ 
+ &usb_otg {
+-	dr_mode = "otg";
++	dr_mode = "host";
+ 	status = "okay";
+ };
+ 
+-- 
+2.25.1
+
